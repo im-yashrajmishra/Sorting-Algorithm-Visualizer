@@ -1,6 +1,6 @@
 
 let selectedAlgo = "B";
-let selectedSpeed = 50;
+let selectedSpeed = 100;
 let selectedSize = 10;
 const arr = new Array();
 const sortingIdeas = {
@@ -64,7 +64,7 @@ function selectAlgorithm()
         element.addEventListener('click', (event)=>{
             document.getElementsByClassName("speed-text")[0].textContent = element.textContent;
             selectedSpeed = Number.parseInt(element.textContent.toString().charAt(0));
-            selectedSpeed=selectedSpeed*50;
+            selectedSpeed=200/selectedSpeed;
         })
     }
     const elements3 = document.getElementsByClassName("array-size");
